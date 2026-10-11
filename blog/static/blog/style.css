@@ -1,0 +1,309 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #242424;
+}
+
+.site-header {
+    border-bottom: 1px solid #e6e6e6;
+    background: #fff;
+}
+
+.header-inner {
+    max-width: 1100px;
+    margin: auto;
+    padding: 22px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: -2px;
+    color: #242424;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #555;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #111;
+}
+
+.container {
+    max-width: 900px;
+    min-height: 75vh;
+    margin: 60px auto;
+    padding: 0 24px;
+}
+
+h1, h2 {
+    font-family: Georgia, serif;
+}
+
+h2 {
+    font-size: 36px;
+    letter-spacing: -1px;
+}
+
+a {
+    color: inherit;
+}
+
+.site-footer {
+    border-top: 1px solid #e6e6e6;
+    padding: 30px;
+    text-align: center;
+    color: #888;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+    .header-inner {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .container {
+        margin: 35px auto;
+    }
+}
+
+/* Blog page */
+.blog-section h1 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.blog-card {
+    padding: 28px 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.blog-card .category {
+    font-size: 13px;
+    font-weight: bold;
+    color: #666;
+}
+
+.blog-card h2 {
+    font-size: 27px;
+    margin: 12px 0;
+}
+
+.blog-card h2 a {
+    text-decoration: none;
+}
+
+.blog-card h2 a:hover {
+    text-decoration: underline;
+}
+
+.blog-card p {
+    color: #666;
+    line-height: 1.7;
+}
+
+.blog-card .date {
+    font-size: 13px;
+    color: #999;
+}
+
+/* Blog details page */
+.article-detail {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.article-category {
+    color: #777;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.article-detail h1 {
+    font-family: Georgia, serif;
+    font-size: 46px;
+    line-height: 1.2;
+    margin: 18px 0;
+}
+
+.article-date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.article-detail hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 30px 0;
+}
+
+.article-content {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    line-height: 1.9;
+    color: #333;
+    margin-bottom: 45px;
+}
+
+.back-link {
+    display: inline-block;
+    color: #1a8917;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    .article-detail h1 {
+        font-size: 32px;
+    }
+
+    .article-content {
+        font-size: 18px;
+    }
+}
+
+/* Homepage */
+
+.hero {
+    padding: 100px 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 72px;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    max-width: 700px;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    font-size: 21px;
+    color: #666;
+    line-height: 1.7;
+    max-width: 550px;
+    margin-bottom: 35px;
+}
+
+.hero-button {
+    display: inline-block;
+    background: #242424;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.hero-button:hover {
+    background: #444;
+}
+
+.home-intro {
+    padding: 70px 0;
+}
+
+.home-intro h2 {
+    font-size: 32px;
+}
+
+.home-intro p {
+    font-size: 18px;
+    color: #777;
+    line-height: 1.8;
+    max-width: 600px;
+}
+
+@media (max-width: 700px) {
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+}
+
+/* Shared listing pages */
+
+.listing-page h1 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.item-list {
+    margin-top: 35px;
+}
+
+.list-item {
+    padding: 24px 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.list-item h2 {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    margin: 0 0 12px;
+}
+
+.list-item p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0 0 10px;
+}
+
+.item-meta {
+    color: #999;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+    .listing-page h1 {
+        font-size: 32px;
+    }
+}

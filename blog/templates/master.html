@@ -1,0 +1,37 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folio | Stories & Ideas</title>
+    <link rel="stylesheet" href="{% static 'blog/style.css' %}">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="logo" href="{% url 'main' %}">Folio.</a>
+
+            <nav>
+                <a href="{% url 'main' %}">Home</a>
+                <a href="{% url 'blogs' %}">Stories</a>
+                <a href="{% url 'categories' %}">Topics</a>
+                <a href="{% url 'users' %}">Writers</a>
+                <a href="{% url 'comments' %}">Comments</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Folio. Made with Django.</p>
+    </footer>
+
+</body>
+</html>

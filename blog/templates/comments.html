@@ -1,0 +1,24 @@
+{% extends 'master.html' %}
+
+{% block content %}
+
+<section class="listing-page">
+    <h1>Community Comments</h1>
+    <p class="subtitle">See what our readers are saying.</p>
+
+    <div class="item-list">
+        {% for comment in comments %}
+        <div class="list-item">
+            <h2>{{ comment.user.username }}</h2>
+            <p>{{ comment.content }}</p>
+            <span class="item-meta">
+                On: {{ comment.post.title }}
+            </span>
+        </div>
+        {% empty %}
+        <p>No comments available yet.</p>
+        {% endfor %}
+    </div>
+</section>
+
+{% endblock %}

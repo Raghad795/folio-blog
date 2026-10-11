@@ -1,0 +1,27 @@
+{% extends 'master.html' %}
+
+{% block content %}
+
+<section class="hero">
+    <h1>Stories worth reading.</h1>
+
+    <p>
+        Discover new perspectives, creative ideas,
+        and inspiring stories.
+    </p>
+
+    <a href="{% url 'blogs' %}" class="hero-button">
+        Start Reading
+    </a>
+</section>
+
+<section class="home-intro">
+    <h2>Welcome to Folio.</h2>
+
+    <p>
+        A place to explore stories, share knowledge,
+        and discover something new every day.
+    </p>
+</section>
+
+{% endblock %}

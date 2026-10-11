@@ -1,0 +1,28 @@
+{% extends 'master.html' %}
+
+{% block content %}
+
+<section class="blog-section">
+    <h1>Explore Stories</h1>
+    <p class="subtitle">Discover ideas, stories, and knowledge.</p>
+
+    <div class="blog-list">
+        {% for post in posts %}
+        <article class="blog-card">
+            <span class="category">{{ post.category.name }}</span>
+
+            <h2>
+                <a href="{% url 'blogdetails' post.id %}">
+                    {{ post.title }}
+                </a>
+            </h2>
+
+            <p>{{ post.content|truncatewords:20 }}</p>
+
+            <span class="date">{{ post.date_published|date:"M d, Y" }}</span>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+
+{% endblock %}

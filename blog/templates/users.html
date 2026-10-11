@@ -1,0 +1,21 @@
+{% extends 'master.html' %}
+
+{% block content %}
+
+<section class="listing-page">
+    <h1>Our Writers</h1>
+    <p class="subtitle">Meet the people in our community.</p>
+
+    <div class="item-list">
+        {% for user in users %}
+        <div class="list-item">
+            <h2>{{ user.username }}</h2>
+            <p>{{ user.email }}</p>
+        </div>
+        {% empty %}
+        <p>No writers available yet.</p>
+        {% endfor %}
+    </div>
+</section>
+
+{% endblock %}

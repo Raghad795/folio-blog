@@ -1,0 +1,27 @@
+{% extends 'master.html' %}
+
+{% block content %}
+
+<article class="article-detail">
+
+    <span class="article-category">{{ post.category.name }}</span>
+
+    <h1>{{ post.title }}</h1>
+
+    <p class="article-date">
+        Published on {{ post.date_published|date:"F d, Y" }}
+    </p>
+
+    <hr>
+
+    <div class="article-content">
+        {{ post.content|linebreaks }}
+    </div>
+
+    <a class="back-link" href="{% url 'blogs' %}">
+        ← Back to Stories
+    </a>
+
+</article>
+
+{% endblock %}
