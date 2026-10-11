@@ -34,7 +34,7 @@ The project includes four models:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/YOUR_USERNAME/folio-blog.git
+   git clone https://github.com/Raghad795/folio-blog.git
    ```
 
 2. Navigate to the project folder containing `manage.py`.
